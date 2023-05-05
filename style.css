@@ -1,0 +1,80 @@
+header{
+    border:none;
+    display: fixed;
+    justify-content:space-between ;
+    top:0;
+    text-align: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+}
+.logo_box{
+    margin:10px;
+}
+.menu_box{
+    display: flex;
+}
+.menu{
+    margin:1rem;
+    width: 8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nexinnovation{
+    display: flex;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.b_logo{
+    margin:1rem;
+    border:0px solid ;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    cursor:pointer;
+}
+
+#underline {
+    height: 3px;
+    background-color: rgb(173, 171, 171);
+    position: absolute;
+    width: 30px;
+    left: 0;
+    top: 55px;
+    padding: 0px;
+    bottom: -5px;
+    text-align: center;
+    animation: slideIn 0.3s ease-out forwards;
+  }
+
+@keyframes slideIn{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 6%;
+    }
+} 
+
+
+.hidden{
+    display: inline-block;
+    margin:10px;
+    width: 10rem;
+    justify-content: space-between;
+}
+.with_hidden{
+    display: inline-block
+}
+.hidden_menu_i{
+    font-size: small;
+    justify-content: space-between;
+    width: 15rem;
+    display:inline ;
+    margin-right: 10px;
+}

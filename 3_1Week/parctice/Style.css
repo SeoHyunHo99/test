@@ -1,0 +1,36 @@
+*{
+    background-color: beige;
+}
+nav{
+    background-color: red;
+}
+h2 {
+    display: inline-block;
+    background-color: red;
+}
+form{
+    display: inline-block;
+    width: fit-content;
+    margin-left: auto;
+
+    background-color: red;
+}
+.home {
+    display: inline-block;
+    background-color: red;
+}
+.intro {
+    display: inline-block;
+    background-color: red;
+}
+.techit {
+    display: inline-block;
+    background-color: red;
+}
+.main_image {
+    position: relative;
+}
+.main_image_text {
+    text-align: center;
+    background-color: transparent;
+}

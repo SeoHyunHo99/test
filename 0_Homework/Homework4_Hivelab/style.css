@@ -1,0 +1,262 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* 스크롤바 없애기 */
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    overflow: hidden;
+    margin: 0px auto;
+    
+}
+
+video {
+    width: 100%;
+}
+
+/* 링크 방문 해도 흰색으로 고정 */
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* nav */
+
+nav {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.menubar {
+    display: flex;
+    align-items: center;
+
+    z-index: 1000;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.nav_logo {
+    flex-grow: 0.5;
+    margin: 0 0 0 40px;
+    font-size: 20px;
+}
+
+.menu_list {
+    position: relative;
+    display: flex;
+    padding: 0;
+    flex-grow: 3;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.menu_list > a {
+    float: left;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 밑줄 따라오게 하기 */
+
+#nav_underline {
+    position: absolute;
+    width: 0;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 3px;
+    transition: 0.5s;
+} 
+
+
+/* 드롭 다운 메뉴 */
+
+ul, a{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.menu_wrap .dep1 {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    margin-right: 40px;
+    
+    color: white;
+
+    font-size: 0;
+}
+.menu_wrap .dep1 > li{
+    display: inline-block;
+    width: fit-content;
+    margin: 5px;
+    white-space: nowrap;
+
+
+    vertical-align: top;
+    background-color: rgb(255, 255, 255, 0);
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.menu_wrap .dep1 > li:hover > a {
+    color: darkgray;
+}
+.menu_wrap .dep1 > li > a {
+    display: block;
+}
+.menu_wrap .dep2 {
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    position: absolute;
+    display: none;
+    background-color: #323232;
+    padding: 0;
+
+    text-align: center;
+}
+.menu_wrap .dep2 li{
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    width: fit-content;
+}
+.menu_wrap .dep2 a{
+    display: block;
+    padding: 10px 15px;
+}
+.menu_wrap .dep1 > li:hover > .dep2 {
+    display: block;
+    
+}
+.menu_wrap .dep2 > li:hover > a {
+    font-weight: bold;
+    width: fit-content;
+}
+
+
+/* main */
+
+main {
+    position: absolute;
+    width: 100%;
+    top: 28%;
+    margin-left: 325px;
+    z-index: 1000;
+
+    color: white;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.hd-title {
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hd-content {
+    font-size: 15px;
+}
+
+.intro_button {
+    margin-top: 1%;
+    margin-left: 0.5%;
+
+    width: 185px;
+    height: 185px;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+
+    cursor: pointer;
+}
+
+.intro_button:hover {
+    background-color: firebrick;
+    transition: all .35s ease-out;
+}
+
+
+/* footer */
+
+footer {
+    display: absoulute;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    z-index: 1000;
+
+    color: white;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.container2{
+    display: absolute;
+    align-items: center;
+
+    z-index: 1000;
+    width: 100%;
+}
+#result {
+    font-size: 25px;
+    font-weight: bold;
+}
+.page_plus_minus{
+    float: left;
+    margin: 0 0 30px 40px;
+
+    font-size: 25px;
+}
+#btn_plus{
+    width: 24px;
+    height: 24px;
+    margin-right: -4px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+#btn_minus{
+    width: 24px;
+    height: 24px;
+    margin-left: -3px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+.btn_group {
+    margin-top: 4px;
+    margin-left: 6px;
+}
+.footer_txt {
+    float: right;
+    padding-top: 80px;
+    margin-right: 40px;
+
+    font-size: 12px;
+    font-weight: bold;
+}

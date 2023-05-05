@@ -1,0 +1,113 @@
+div{
+display: grid;
+}
+
+.b1 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+.b2 {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    z-index: 100;
+}
+.b3 {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
+.b4 {
+    width: 200px;
+    height: 100px;
+    background-color: tomato;
+    position: absolute;
+    left: 30;
+    top: 20;
+    z-index: 1;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    float: left;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    float: right;
+}
+
+p {
+    clear: both;
+}
+
+/* flex-box */
+.container {
+    margin: auto auto;
+    padding: 10px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.a1 {
+    width: 100px;
+    height: 75px;
+    background-color: violet;
+}
+.a2 {
+    width: 100px;
+    height: 75px;
+    background-color: blue;
+    flex-shrink: 10;
+}
+.a3 {
+    width: 100px;
+    height: 75px;
+    background-color: yellow;
+}
+.a4 {
+    width: 100px;
+    height: 75px;
+    background-color: tan;
+}
+.a5 {
+    width: 100px;
+    height: 75px;
+    background-color: green;
+}
+
+/* grid */
+
+.item1 {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2 {
+    background-color: skyblue;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item3 {
+    background-color: coral;
+}
+.item4 {
+    background-color: hotpink;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px;
+}

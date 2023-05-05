@@ -1,0 +1,165 @@
+* {
+    background-color: white;
+}
+
+/* 로그인 */
+.login {
+    /* 위치 및 색상 */
+    position: absolute;
+    right: 0%;
+
+    /* border 부분 */
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #CCD1E7;
+
+    /* padding 부분 */
+    padding: 25px 15px 25px 15px;
+}
+.login_btn {
+    background-color: #CCD1E7;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+}
+.login_btn:hover{
+    /* animation 연습 */ 
+    color: purple;
+
+    transition: all 1s ease 0s;
+}
+.login_text{
+    position: relative;
+    background-color: white;
+}
+
+/* 상단 메인 사진 */
+.main_image {
+    position: relative;
+}
+.main_image_text {
+    /* 글자 위치 조정 */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 색상 조정 */
+    color:white;
+    background-color: transparent;
+
+}
+
+/* 사진 및 날짜 */
+.img_date {
+    width: 200px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CCD1E7;
+}
+.date{
+    width: fit-content; 
+    margin: 0 auto;
+}
+
+/* 검색 */
+.search {
+    width: 200px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CCD1E7;
+}
+.search_box{
+    padding-left: 25px;
+}
+.search_btn{
+    width: 150px;
+    height: 25px;
+
+    background-color: #CCD1E7;
+    color: white;
+    
+    border: none;
+    border-radius: 5px;
+
+    /* animation */
+    animation-name: BtnDown;
+    animation-duration: 0.3s; 
+    animation-direction: normal; 
+    animation-iteration-count: 1; 
+    animation-fill-mode:forwards;
+}
+.search_btn:hover{
+    /* animation 연습 */ 
+    animation-name: BtnUp; 
+    animation-duration: 0.3s; 
+    animation-direction: normal; 
+    animation-iteration-count: 1; 
+    animation-fill-mode:forwards;
+    cursor:pointer;
+    color: purple;
+
+    transition: all 1s ease 0s;
+}
+@keyframes BtnUp{
+    0%{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    100%{
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
+}
+@keyframes BtnDown {
+    0%{
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+
+/* 메뉴 파트 */
+.menu{
+    width: 200px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CCD1E7;
+}
+
+footer {
+    /* 위치 및 색상 */
+    position: absolute;
+    right: 0%;
+}

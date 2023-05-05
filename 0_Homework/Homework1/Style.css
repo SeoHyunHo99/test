@@ -1,0 +1,291 @@
+* {
+    background-color: white;
+}
+h1{
+    font-size:70px;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Single Day', cursive;
+}
+
+/* 로그인 */
+.login {
+    /* 위치 */
+    position: relative;
+    width: fit-content;
+    margin-left: auto;  
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #CCD1E7;
+    
+    padding: 5px 15px 5px 15px;
+}
+.email {
+    display: inline-block;
+}
+.password {
+    display: inline-block;
+}
+.email {
+    display: inline-block;
+}
+.find_idpw {
+    width: fit-content;
+    
+    margin-left: auto;
+    padding-top: 5px;
+
+    font-size: 5px;
+}
+.find {
+    display: inline-block;
+}
+.login_btn {
+    background-color: #CCD1E7;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+}
+.login_btn:hover{
+    /* animation 연습 */ 
+    color: purple;
+
+    transition: all 1s ease 0s;
+}
+.login_text{
+    position: relative;
+    background-color: white;
+}
+
+
+/* 메뉴 */
+.menuwrap {
+    width: fit-content; 
+    margin: 0 auto;
+
+    font-size: 20px;
+}
+.menu1 {
+    display: inline-block;    
+}
+.menu2 {
+    display: inline-block;
+}
+.menu3 {
+    display: inline-block;
+}
+.menu4 {
+    display: inline-block;
+}
+.menu5 {
+    display: inline-block;
+}
+
+
+/* 상단 메인 사진 */
+.main_image {
+    position: relative;
+}
+.main_image_text {
+    /* 글자 위치 조정 */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 색상 조정 */
+    color:white;
+    background-color: transparent;
+
+}
+
+
+/* <aside>&<main> 그리드 나누기 */
+.parent {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+
+/* 좌측 사이드바(프로필) */
+.img_date {
+    width: 200px;
+
+    margin-top: 15px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CCD1E7;
+}
+.date{
+    width: fit-content; 
+    margin: 0 auto;
+}
+
+
+/* 메인 본문(글 검색, section) */
+.search_box {
+    width: fit-content; 
+    margin: 0 auto;
+}
+.search {
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 2px;
+    border-color: black;
+    border-radius: 5px;
+    width: 600px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+.btn_search {
+    background-color: #CCD1E7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    height: 50px;
+    width: 70px;
+
+    border: none;
+    border-radius: 5px;
+}
+/* 글쓰기/삭젝하기 */
+.btn_wrap {
+    width: fit-content; 
+    margin-left: auto;
+    margin-top: 30px;
+}
+.writebtn {
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 15px 5px 0 45px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #CCD1E7;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+    animation-name: BtnDown;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+.deletebtn {
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 15px 5px 0 15px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #CCD1E7;
+    font-size: 16px;
+    font-weight: bold;
+
+    animation-name: BtnDown;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+.writebtn:hover {
+    animation-name: BtnUp;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+}
+.deletebtn:hover {
+    animation-name: BtnUp;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+}
+
+@keyframes BtnUp {
+    0%{
+        position: relative;
+        top:0px;
+        left:0px;
+    }
+    100%{
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+}
+@keyframes BtnDown {
+    0%{
+        position: relative;
+        top:-5px;
+        left:-5px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.content_wrap {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 85% 15%;
+
+    margin: 5px;
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CCD1E7;
+
+    padding: 10px 10px;
+}
+
+.content_wrap2 {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 85% 15%;
+
+    margin: 5px;
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CCD1E7;
+
+    padding: 10px 10px;
+}
+
+.more_wrap {
+    font-size: 5px;
+    margin-top: 15px;
+    width: fit-content; 
+    margin-right: 0 auto;
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+h4 {
+    margin: 10px;
+}
+
+footer {
+    /* 위치 및 색상 */
+    position: relative;
+    width: fit-content; 
+    margin-left: auto;
+}
